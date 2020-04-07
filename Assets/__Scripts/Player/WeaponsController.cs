@@ -6,17 +6,18 @@ public class WeaponsController : MonoBehaviour
     //private Variables
     [SerializeField] private float bulletSpeed = 6.0f;
     [SerializeField] private Bullet bulletPrefab;
+    private GameObject bulletParent;
     [SerializeField] private float firingRate = 0.25f;
     //Private Methods
-    private GameObject bulletParent;
+    
     public Transform firePoint;
     public float bulletForce = 20f;
     private Coroutine firingCoroutine;
     private void Start() {
-        bulletParent = GameObject.Find("BulletParent");
+        bulletParent = GameObject.Find("BulletParent2");
         if (!bulletParent)
         {
-            bulletParent = new GameObject("BulletParent");
+            bulletParent = new GameObject("BulletParent2");
         }
     }
     // Update is called once per frame

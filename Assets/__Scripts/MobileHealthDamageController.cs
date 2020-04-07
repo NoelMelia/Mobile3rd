@@ -8,7 +8,7 @@ public class MobileHealthDamageController : MonoBehaviour
     [SerializeField]private float damage;
     [SerializeField]private MobileHealthController healthController;
 
-    private void OnTriggerEnter2D(Collider2D other) {
+     void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player"))
         {
             Damage();
@@ -18,7 +18,7 @@ public class MobileHealthDamageController : MonoBehaviour
         
     }
 
-    private void Damage()
+     void Damage()
     {
         healthController.playerHealth = healthController.playerHealth - damage;
         healthController.UpdateHealth();

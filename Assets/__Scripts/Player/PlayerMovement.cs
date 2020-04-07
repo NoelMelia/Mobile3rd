@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Vector2 mousePos;
     
-    
+    private void Start() {
+        rb = GetComponent<Rigidbody2D>();
+    }
     
     // Update is called once per frame
     void Update()
