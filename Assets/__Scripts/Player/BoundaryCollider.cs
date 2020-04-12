@@ -8,6 +8,7 @@ public class BoundaryCollider : MonoBehaviour
    {
        var enemy = whatHitMe.GetComponent<Enemy>();
        var bullet = whatHitMe.GetComponent<Bullet>();
+       var enemyBullet = whatHitMe.GetComponent<EnemyStarController>();
        if(bullet)
        {
            Destroy(bullet.gameObject);
@@ -16,6 +17,10 @@ public class BoundaryCollider : MonoBehaviour
        if(enemy)
        {
            Destroy(enemy.gameObject);
+       }
+       if(enemyBullet)
+       {
+           Destroy(enemyBullet.gameObject);
        }
    }
 }

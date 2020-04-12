@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/__Scenes/Tuturiol.unity
+- path: Assets/__Scenes/BossLevel.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

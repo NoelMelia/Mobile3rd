@@ -25,5 +25,13 @@ public class MobileHealthController : MonoBehaviour
         messageText.text= "Game Over";
         Time.timeScale = 0f;
     }
-
+    public static MobileHealthController FindHealthController()
+        {
+            MobileHealthController sc = FindObjectOfType<MobileHealthController>();
+            if(!sc)
+            {
+                Debug.LogWarning("Missing Health controller");
+            }
+            return sc;
+    }
 }

@@ -16,27 +16,31 @@ public class ShootAtPayer : MonoBehaviour
     {
         player = FindObjectOfType<PlayerMovement>();
         shotCounter = waitBetweenShots;
+
+        //enemyStar = GameObject.Find("EnemyBullet");
+        if (!enemyStar)
+        {
+            enemyStar = new GameObject("EnemyBullet");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Close"+transform.localScale.x);
         Debug.DrawLine(new Vector3(transform.position.x - playerRange, transform.position.y, transform.position.z),
             new Vector3(transform.position.x + playerRange, transform.position.y, transform.position.z)
         );
         shotCounter -= Time.deltaTime;
-        if(transform.localScale.x < 0 && player.transform.position.x > transform.position.x && 
-                player.transform.position.x < transform.position.x + playerRange && shotCounter < 0)
-        {
-                Instantiate(enemyStar, launchPoint.position, launchPoint.rotation);
-                shotCounter = waitBetweenShots;
-        }
+        
 
-        if(transform.localScale.x > 0 && player.transform.position.x < transform.position.x && 
+        if( player.transform.position.y > transform.position.y - playerRange &&
                 player.transform.position.x > transform.position.x - playerRange && shotCounter < 0)
         {
                 Instantiate(enemyStar, launchPoint.position, launchPoint.rotation);
                 shotCounter = waitBetweenShots;
         }
+        
     }
+    
 }

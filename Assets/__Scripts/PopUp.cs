@@ -21,7 +21,11 @@ public class PopUp : MonoBehaviour
         messageText.text= "Press Continue to Continue Game";
         Time.timeScale = 0f;
     }
-
+    public void Congrats(){
+        menuPanel.SetActive(true);
+        messageText.text= "Congratulation on Completing the Game";
+        Time.timeScale = 0f;
+    }
     public void BackButton(){
         menuPanel.SetActive(false);
         //messageText.text= "Press Start to Begin";
