@@ -972,6 +972,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21f247db1d3ba8643b2a20978bab5049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1239908906
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8321695638117290516, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_Name
+      value: Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290513, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321695638117290518, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 76e30f84c7e786542981abb23e3aee96, type: 3}
+    - target: {fileID: 8321695638117290518, guid: 590c2276d07b6e1459f481d121ab6740,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 590c2276d07b6e1459f481d121ab6740, type: 3}
 --- !u!224 &1320272616 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
@@ -1966,11 +2045,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1232733684}
     m_Modifications:
-    - target: {fileID: 7499808968154756699, guid: e97b31690fda9bb4c8723a9edd70f493,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayButton
-      objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2075,6 +2149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499808968154756699, guid: e97b31690fda9bb4c8723a9edd70f493,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayButton
       objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756693, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}

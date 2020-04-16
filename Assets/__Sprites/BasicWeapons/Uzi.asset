@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5687dad1d67d84fa88b66bced8aa24, type: 3}
+  m_Name: Uzi
+  m_EditorClassIdentifier: 
+  currentWeaponSpt: {fileID: 21300000, guid: 5680fbacb62edc543a8483245aad1954, type: 3}
+  bulletPrefab: {fileID: 5863527530563331285, guid: 6559c8413560c2f42b184f070cdac16e,
+    type: 3}
+  fireRate: 0.25
+  bulletForce: 50

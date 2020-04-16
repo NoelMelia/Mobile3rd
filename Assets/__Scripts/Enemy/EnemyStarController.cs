@@ -43,6 +43,7 @@ public class EnemyStarController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) {
         var player = other.GetComponent<PlayerMovement>();
+        var border = other.GetComponent<BoundaryCollider>();
 
         if(player)
         {

@@ -8,13 +8,11 @@ public class PlayerMovement : MonoBehaviour
     //Public Fields
 
     //Private Fields
-    public Rigidbody2D rb;
-    public Camera cam;
-    public float speed = 5.0f;
+    private Rigidbody2D rb;
+    [SerializeField]private Camera cam;
+    [SerializeField]private float speed = 5.0f;
     //Public Methods
-    
-    //Private Methods
-    Vector2 movement;
+    Vector2 movement;//Movement following the mouse
     Vector2 mousePos;
     
     private void Start() {
@@ -24,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Moving the Player with W,A,S and D
         //if the player presses the up arrow then move
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -36,10 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Using Mouse 
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
-
+        //Looking at the direction of mouse 
         Vector2 lookDir = mousePos - rb.position;
-
+        //Getting the angle of direction the player is looking
         float angle = Mathf.Atan2(lookDir.y,lookDir.x)* Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
         

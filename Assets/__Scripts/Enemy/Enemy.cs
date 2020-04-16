@@ -10,30 +10,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject explosionFX;
     [SerializeField]private AudioClip crashSound;
     [SerializeField]private AudioClip dieSound;
-    [SerializeField]private AudioClip spawnSound;
     [SerializeField] private float explosionDuration = 1.0f;
     private SoundController sc;
     //public fields
-    public int ScoreValue{get {return scoreValue;}}
-    //delegete type to use in event
-    public delegate void EnemyKilled(Enemy enemy);
-
-    //create static method to be implemented in the listener
-    public static EnemyKilled EnemyKilledEvent;
-    //private 
     [SerializeField]private int scoreValue = 10;
-  private void Start()
+    private void Start()
     {
         //sc = FindObjectOfType<SoundController>();
-        sc = SoundController.FindSoundController();
-        PlaySound(spawnSound);
-    }
-    private void PlaySound(AudioClip clip)
-    {
-        if(sc)
-        {
-            sc.PlayOneShot(clip);
-        }
+        sc = SoundController.FindSoundController();//Find Sound Controller 
     }
     //private Methods
     private void OnTriggerEnter2D(Collider2D whatHitMe)
@@ -45,11 +29,9 @@ public class Enemy : MonoBehaviour
         var player = whatHitMe.GetComponent<PlayerMovement>();
         var bullet = whatHitMe.GetComponent<Bullet>();
 
-        Debug.Log("Hit Something");
-
+        //Debug.Log("Hit Something");
         if(player)//if(player != null)
-        {
-            
+        {          
             PlaySound(crashSound);
             //play crash sound here
             //destroy the player and the rectangle
@@ -60,30 +42,28 @@ public class Enemy : MonoBehaviour
 
         if(bullet)
         {
-            ScoreScript.scoreValue += 10;
+            //Score Value to be added to the total score
+            ScoreScript.scoreValue += scoreValue;//Was 10
+            //Play sound
             PlaySound(dieSound);
-           Destroy(bullet.gameObject);
-            //play die sound
-            PublishEnemyKilledEvent();
+            //Destroy object
+            Destroy(bullet.gameObject);
+            //play die sound   
             //give player points
             //destroy bullet
             GameObject explosion = Instantiate(explosionFX, transform.position, transform.rotation);
-            
             //destroy the game object
             Destroy(explosion, explosionDuration);
             Destroy(gameObject);
             //Destroy(explosion);
         }
     }
-    private void PublishEnemyKilledEvent()
-    {
-        //make sure someone is listening
-        if(EnemyKilledEvent != null)
+    private void PlaySound(AudioClip clip)
+    {//Playing the sound and checking to see if soundcontoller is in level
+        if(sc)
         {
-            EnemyKilledEvent(this); 
+            sc.PlayOneShot(clip);
         }
-        
-
     }
     
 }

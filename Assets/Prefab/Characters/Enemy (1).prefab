@@ -180,8 +180,7 @@ MonoBehaviour:
   explosionFX: {fileID: 3402237970336822331, guid: 06cee0d4778ffc14283ac6a11ecdbc2b,
     type: 3}
   crashSound: {fileID: 8300000, guid: ba1e3a2566ba75a46860ac54a463d792, type: 3}
-  dieSound: {fileID: 8300000, guid: e648f72ff601ac249b896f590464d318, type: 3}
-  spawnSound: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 44ba9f17a7b1cde468110dd53eeaf499, type: 3}
   explosionDuration: 1
   scoreValue: 20
 --- !u!114 &8382853484028686657

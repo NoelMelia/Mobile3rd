@@ -434,7 +434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000012398, y: 269.8}
+  m_AnchoredPosition: {x: 32, y: 549}
   m_SizeDelta: {x: 229.65, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305884694
@@ -484,8 +484,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 7
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -199.81256, y: 0, z: -138.10583, w: -91.091064}
   m_textInfo:
     textComponent: {fileID: 1305884694}
     characterCount: 15
@@ -530,7 +530,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -672,11 +672,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 516234459}
     m_Modifications:
-    - target: {fileID: 7499808968154756699, guid: e97b31690fda9bb4c8723a9edd70f493,
-        type: 3}
-      propertyPath: m_Name
-      value: ButtonTemplate
-      objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -740,17 +735,17 @@ PrefabInstance:
     - target: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -143
+      value: -222
       objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -407.7
+      value: -1021.8
       objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -325
+      value: -701.1
       objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756692, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
@@ -781,6 +776,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499808968154756699, guid: e97b31690fda9bb4c8723a9edd70f493,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonTemplate
       objectReference: {fileID: 0}
     - target: {fileID: 7499808968154756693, guid: e97b31690fda9bb4c8723a9edd70f493,
         type: 3}
@@ -1248,5 +1248,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3038383696303620036, guid: e349986de1e750f4e9f203d24d95efcc,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038383696303620036, guid: e349986de1e750f4e9f203d24d95efcc,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 76e30f84c7e786542981abb23e3aee96, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e349986de1e750f4e9f203d24d95efcc, type: 3}

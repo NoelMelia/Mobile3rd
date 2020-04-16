@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuPanel: {fileID: 0}
-  playerHealth: 100
+  playerHealth: 200
   messageText: {fileID: 0}
   healthText: {fileID: 0}
